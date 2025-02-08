@@ -60,16 +60,20 @@ function clear() {
 </script>
 
 <template>
-  <button
-  class=" 
-  hover:text-blue-500 
-  font-bold 
-  py-1 
-  px-1 
-  transition 
-  duration-300 
-  ease-in-out" 
-  @click="$router.push('/')">＜返回工具选择</button>
+  <div class="bg-gray-200 h-8 flex justify-between">
+    <button
+    class=" 
+    hover:text-blue-500  
+    py-1 
+    px-1
+    text-base 
+    transition 
+    duration-300 
+    ease-in-out" 
+    @click="$router.push('/')">＜返回工具选择
+    </button>
+    <div class="text-base text-gray-500 p-1">编码转换</div>
+  </div>
   <div class="">
     <textarea
       v-model="input"
@@ -108,9 +112,9 @@ function clear() {
         <button @click="urlEncode" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-1 rounded m-1">URL 编码</button>
         <button @click="urlDecode" class="bg-green-500 hover:bg-green-700 text-white font-bold py-1 px-1 rounded m-1">URL 解码</button>
       </div>
-      <div class="m-1">
-        <button @click="clear" class="bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-1 rounded m-1">清空内容</button>
-      </div>
+    </div>
+    <div class="text-right m-1">
+      <button @click="clear" class="bg-red-400 hover:bg-red-500 text-white font-bold py-1 px-1 rounded m-1">清空内容</button>
     </div>
 
     <textarea

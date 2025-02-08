@@ -14,6 +14,9 @@ dependencies:
   postcss:
     specifier: ^8.5.1
     version: 8.5.1
+  qrcode.vue:
+    specifier: ^3.6.0
+    version: 3.6.0(vue@3.5.13)
   tailwindcss:
     specifier: ^4.0.0
     version: 4.0.0
@@ -3416,6 +3419,14 @@ packages:
     dependencies:
       escape-goat: 4.0.0
     dev: true
+
+  /qrcode.vue@3.6.0(vue@3.5.13):
+    resolution: {integrity: sha512-vQcl2fyHYHMjDO1GguCldJxepq2izQjBkDEEu9NENgfVKP6mv/e2SU62WbqYHGwTgWXLhxZ1NCD1dAZKHQq1fg==}
+    peerDependencies:
+      vue: ^3.0.0
+    dependencies:
+      vue: 3.5.13(typescript@5.6.3)
+    dev: false
 
   /queue-microtask@1.2.3:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
